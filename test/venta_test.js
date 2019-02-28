@@ -21,4 +21,11 @@ describe('Venta', function(){
         venta.add();
         expect(venta.totalS(1)).equal(200);
     });
+
+    it ('Deberia mostrar el total de dos articulos de un consto de 200', function(){
+        let venta = new Venta();
+        venta.add();
+        venta.add();
+        expect(venta.total(2)).equal(200);
+    });
 });
