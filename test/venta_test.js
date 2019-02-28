@@ -2,7 +2,6 @@ var assert = require('assert');
 var expect = require('chai').expect;
 
 import Venta from '../Venta.js';
-
 describe('Venta', function(){
 
     it ('Total de venta sin producto deberia ser 0', function(){
@@ -28,4 +27,10 @@ describe('Venta', function(){
         venta.add();
         expect(venta.total(2)).equal(200);
     });
+
+   /* it ('Deberia mostrar si un producto esta disponible', function(){
+        let venta = new Venta();
+        venta.add();
+        expect(venta.available(1)).equal(true);
+    });*/
 });
