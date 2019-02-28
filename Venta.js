@@ -12,7 +12,7 @@ class Venta {
     }
 
     totalS(quantityServices) {
-        return this.servicio.calculation(quantityServices);
+        return this.servicio.calculation(this.quantityServices);
     }
 
     add() {
