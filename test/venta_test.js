@@ -16,5 +16,9 @@ describe('Venta', function(){
         expect(venta.total(1)).equal(100);
     });
 
-    
+    it ('Deberia mostrar el total de un solo servicio de un consto de 200', function(){
+        let venta = new Venta();
+        venta.add();
+        expect(venta.totalS(1)).equal(200);
+    });
 });
