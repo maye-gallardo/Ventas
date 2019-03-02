@@ -22,6 +22,9 @@ describe('Producto',function () {
         expect(producto.estaDisponible(1)).equal(true);
     });
 
-
+    it('No deberia de haber producto del tipo servicio disponibles',function () {
+        let producto = new Servicio("x", 1, 5);
+        expect(producto.estaDisponible(10)).equal(false);
+    });
 
 });
