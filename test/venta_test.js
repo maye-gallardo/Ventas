@@ -4,7 +4,7 @@ var should = require('chai').should();
 
 import Venta from '../Venta.js';
 import Articulo from '../Articulo.js';
-
+import Servicio from '../Servicio.js';
 
 
 describe('Venta',function () {
@@ -21,7 +21,14 @@ describe('Venta',function () {
         expect(venta.total()).equal(1);
     });
 
-    
+    it('Si no vendo nada la ganancia deberia ser 2',function () {
+        let venta = new Venta();
+        let producto = new Articulo("x", 1, 1, 5);
+        let producto2 = new Servicio("x", 1, 5);
+        venta.agregarProducto(producto);
+        venta.agregarProducto(producto2);
+        expect(venta.total()).equal(2);
+    });
 
 
 });
