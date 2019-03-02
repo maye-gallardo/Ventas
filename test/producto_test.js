@@ -12,6 +12,10 @@ describe('Producto',function () {
         expect(producto.estaDisponible(1)).equal(true);
     });
 
-    
+    it('No deberia de haber producto del tipo articulo disponibles',function () {
+        let producto = new Articulo("x", 1, 1, 5);
+        expect(producto.estaDisponible(10)).equal(false);
+    });
+
 
 });
