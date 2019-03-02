@@ -6,7 +6,7 @@ class Venta{
     }
 
     total() {
-        return 0;
+        return this._productos.length;
     }
 
     agregarProducto(producto) {

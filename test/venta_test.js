@@ -5,6 +5,8 @@ var should = require('chai').should();
 import Venta from '../Venta.js';
 import Articulo from '../Articulo.js';
 
+
+
 describe('Venta',function () {
 
     it('Si no vendo nada la ganancia deberia ser 0',function () {
@@ -19,7 +21,7 @@ describe('Venta',function () {
         expect(venta.total()).equal(1);
     });
 
-
+    
 
 
 });
