@@ -1,9 +1,6 @@
-class Producto{
-    isAvailable(){
-        return true;
-    }
-    calculation(quantity) {
-        return quantity;
-    }
+class Producto {
+   estaDisponible(cantidad) {};
+   calcularTarifa() {};
 }
+
 module.exports = Producto;
